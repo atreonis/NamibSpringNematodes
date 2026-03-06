@@ -4,9 +4,9 @@ library(vegan)
 library(RColorBrewer)
 full_data <- RDA
 
-# First 9 columns are species data, rest are environmental
-env_data <- full_data[, 1:8]  
-species_data <- full_data[, 10:17]
+# Pull appropriate columns from dataset
+env_data <- full_data[, c(1, 2, 4, 5, 6, 7, 8)] 
+species_data <- full_data[, 9:17]
 str(species_data)
 str(env_data)
 
@@ -16,7 +16,7 @@ env_data$type <- factor(env_data$type)
 
 #standardize environmental variables
 env_data_scaled <- env_data
-env_data_scaled[, c("width", "depth", "do", "ph", "ec")] <- scale(env_data_scaled[, c("elevation", "width", "depth", "do", "ph", "ec")])
+env_data_scaled[, c("width", "depth", "do", "ph", "ec")] <- scale(env_data_scaled[, c("width", "depth", "do", "ph", "ec")])
 
 #dbRDA
 bray_dist <- vegdist(species_data, method = "bray")
