@@ -20,7 +20,7 @@ env_data_scaled[, c("width", "depth", "do", "ph", "ec")] <- scale(env_data_scale
 
 #dbRDA
 bray_dist <- vegdist(species_data, method = "bray")
-dbrda_model <- capscale(bray_dist ~ site + type + elevation + width + depth + do + ph + ec, data = env_data_scaled, add = TRUE)
+dbrda_model <- capscale(bray_dist ~ site + type + width + depth + do + ph + ec, data = env_data_scaled, add = TRUE)
 
 # Summary
 summary(dbrda_model)
