@@ -5,7 +5,6 @@ composition across seven hypersaline spring sites in the central Namib Desert.
 
 Analyses include:
 - Data cleaning
-- PERMANOVA
 - Community ordination (RDA)
 - Environmental variable analysis
 
