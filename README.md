@@ -1,11 +1,11 @@
 <img width="468" height="41" alt="image" src="https://github.com/user-attachments/assets/5eda08db-ead2-4cbc-a464-53e0090d8b53" /># Nematode Communities in Namib Desert Springs
 
 This repository contains R scripts used to analyze nematode community
-composition across seven hypersaline spring sites in the central Namib Desert.
+composition by dbRDA across seven hypersaline spring sites in the central Namib Desert.
 
 Analyses include:
 - Data cleaning
-- Community ordination (RDA)
+- distance-based community ordination (dbRDA)
 - Environmental variable analysis
 
 Author: Amy Treonis
